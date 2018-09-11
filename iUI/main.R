@@ -9,7 +9,7 @@ lapply(ui_files, function(f){
 ##
 # Shiny ui
 ##
-mainUI <- fluidPage(theme = shinythemes::shinytheme("superhero"),
+mainUI <- fluidPage(theme = shinythemes::shinytheme("paper"),
   
   # css style
   tags$head(
@@ -19,33 +19,44 @@ mainUI <- fluidPage(theme = shinythemes::shinytheme("superhero"),
   fluidRow(
     column(
       12,
-      shypka.ddiv(tags$h1(class = "block_title", "Yeah Right!")),
+      style = "postion:relative;",
       
-      navlistPanel(
-        widths = c(2,10),
-        "Sites",
+      tags$div(
+        id = "main_frame",
         
-        ##
-        # Webapp portal
-        ##
-        tabPanel(
-          "Webapp",
-          tabsetPanel(
-            tp_portal
-          )
-        ),
-        
-        ##
-        # Webapp Q&A
-        ##
-        tabPanel(
-          "Webapp Q&A",
-          tabsetPanel(
-            #tp_qa
-          )
-        )
-        
-      )
-    )
-  )
+        fluidRow(
+          column(
+            12,
+            #shypka.ddiv(tags$h1(class = "block_title", "GEEKS AND LEEKS")),
+            
+            navbarPage(
+              "Sites",
+              
+              ##
+              # Webapp portal
+              ##
+              tabPanel(
+                "Webapp",
+                tabsetPanel(
+                  tp_portal
+                )
+              ),
+              
+              ##
+              # Webapp Q&A
+              ##
+              tabPanel(
+                "Webapp Q&A",
+                tabsetPanel(
+                  #tp_qa
+                )
+              )
+              
+            )
+          ) # end of column
+        ) # end of fluidRow
+      ) # end of main_frame div
+     
+    ) # end of column
+  ) # end of fluidRow
 )

@@ -4,6 +4,13 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
+	background-image: url('bki5.jpg');
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-radius: 0;
 	border: 0;
 }
 
@@ -27,18 +34,28 @@ body {
 /*
  * App specific settings
  */
+#main_frame {
+  width:90%;
+  margin:10px auto;
+  border-radius:5px;
+  background-color:rgba(250,250,250,0.5);
+}
+
 .block_title {
   padding:3px 0;
-  color:rgba(255,250,250,1);     /* snow */
-  font-weight:bold;
+  color:rgba(255,69,0,1);     /* oranged */
+  font-weight:1000;
 }
 
 .acs_por_frame {
   float:left;
-  margin:5px 5px 5px 0;
+  width:300px;
+  margin:5px 5px 0 0;
 }
 
 .acs_por_content {
   padding:20px;
+  border-right:3px solid rgba(135,206,235,1);     /* Skyblue */
+  border-radius:5px;
   font-weight:bold;
 }
