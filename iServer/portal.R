@@ -3,6 +3,7 @@
 ##
 lapply(1:length(avail_portals), function(i){
   
+  
   output[[paste0("acs_por", i)]] <- renderUI({
     
     if(avail_portals[[i]]$active == 1){
@@ -27,10 +28,10 @@ lapply(1:length(avail_portals), function(i){
             shypka.ddiv(
               tags$h4(
                 class = "acs_por_content",
-                style = paste0("color:", avail_portals[[i]]$ft_color),
+                style = paste0("color:", "white"),
                 avail_portals[[i]]$name
               ), 
-              color = avail_portals[[i]]$bg_color
+              color = brewed_colors[i]
             )
           )
         )
