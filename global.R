@@ -28,8 +28,8 @@ avail_portals <- list(
     active = 1
   ),
   trd_ptl = list(
-    name = "Trader Portal",
-    shiny_suffix = "/kmin/TraderPortal",
+    name = "My Bro Ke",
+    shiny_suffix = "/kmin/MyBroKe",
     bg_color = "rgba(176,224,230,1)",   # deprecated
     ft_color = "rgba(80,80,80,1)",      # deprecated
     active = 1
