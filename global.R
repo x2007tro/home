@@ -63,6 +63,13 @@ avail_portals <- list(
     active = 1
   ),
   proj05 = list(
+    name = "Player Scouting",
+    shiny_suffix = "/kmin/ForzaMilan",
+    bg_color = fp_color,                # deprecated
+    ft_color = "rgba(80,80,80,1)",      # deprecated
+    active = 0
+  ),
+  proj06 = list(
     name = "Project 05",
     shiny_suffix = "/kmin/fp",
     bg_color = fp_color,                # deprecated
