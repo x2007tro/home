@@ -70,7 +70,7 @@ avail_portals <- list(
     active = 1
   ),
   proj06 = list(
-    name = "Project 05",
+    name = "Financial Health",
     shiny_suffix = "/kmin/FinHeal",
     bg_color = fp_color,                # deprecated
     ft_color = "rgba(80,80,80,1)",      # deprecated
