@@ -67,13 +67,13 @@ avail_portals <- list(
     shiny_suffix = "/kmin/ForzaMilan",
     bg_color = fp_color,                # deprecated
     ft_color = "rgba(80,80,80,1)",      # deprecated
-    active = 0
+    active = 1
   ),
   proj06 = list(
     name = "Project 05",
-    shiny_suffix = "/kmin/fp",
+    shiny_suffix = "/kmin/FinHeal",
     bg_color = fp_color,                # deprecated
     ft_color = "rgba(80,80,80,1)",      # deprecated
-    active = 0
+    active = 1
   )
 )
